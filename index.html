@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#05030a" />
+  <title>NORA — The World of Dreams</title>
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Desktop Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-track">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+  </div>
+
+  <!-- Ambient Cosmic Canvas (Lightweight Stars & Floating Text Particles) -->
+  <canvas id="ambientCanvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Radial Glow Orbs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- 0. Preloader Screen -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="loader-ring"></div>
+      <p class="loader-text">AWAKENING THE UNIVERSE</p>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. Opening Screen (Curtain) -->
+  <section class="opening-screen" id="openingScreen" aria-label="Introduction">
+    <div class="opening-content">
+      <p class="opening-eyebrow">CHAPTER I &bull; THE BEGINNING</p>
+      <h1 class="nora-hero-title" data-text="NORA">NORA</h1>
+      <p class="opening-subtitle">
+        "Some names are ordinary, but some become a beautiful feeling."
+      </p>
+      <button class="btn-glow primary-enter-btn" id="enterWorldBtn" type="button">
+        <span class="btn-text">ENTER THE WORLD</span>
+        <span class="btn-glare"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 2. Main Experience Wrapper -->
+  <div class="main-experience" id="mainExperience" aria-hidden="true">
+    <!-- Floating Glass Navigation & Digital Clock -->
+    <header class="glass-nav" id="glassNav">
+      <a href="#welcome" class="nav-brand">NORA</a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#thoughts">Thoughts</a>
+        <a href="#secrets">Secrets</a>
+        <a href="#feelings">Feelings</a>
+        <a href="#dreams">Dream World</a>
+      </nav>
+      <div class="digital-clock-box" title="Live Cosmic Time">
+        <span class="clock-pulse"></span>
+        <span id="digitalClock">00:00:00</span>
+      </div>
+    </header>
+
+    <!-- 3. Main Welcome Section -->
+    <section class="section hero-welcome" id="welcome">
+      <div class="container">
+        <div class="badge-pill reveal-up">THE SANCTUARY OF WORDS</div>
+        <h2 class="welcome-heading" id="typewriterHeading" data-text="WELCOME TO NORA'S WORLD"></h2>
+        <p class="welcome-subtext" id="typewriterSubtext" data-text="Not everything beautiful needs to be seen. Some things are simply felt."></p>
+        <div class="scroll-cue reveal-up">
+          <span>SCROLL TO EXPLORE</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Cinematic Typography Showcase Banners -->
+    <section class="section typography-odyssey" aria-label="Poetic Statements">
+      <div class="container">
+        <div class="typo-block reveal-scale">
+          <span class="typo-index">01</span>
+          <h3 class="typo-statement style-cinematic">NORA — A DIFFERENT KIND OF MAGIC.</h3>
+        </div>
+
+        <div class="typo-block reveal-left">
+          <span class="typo-index">02</span>
+          <h3 class="typo-statement style-italic-serif">A LITTLE WORLD FULL OF BEAUTIFUL FEELINGS.</h3>
+        </div>
+
+        <div class="typo-block reveal-right">
+          <span class="typo-index">03</span>
+          <h3 class="typo-statement style-outline-glow">YOUR STORY, YOUR RULES, YOUR UNIVERSE.</h3>
+        </div>
+
+        <div class="typo-block reveal-blur">
+          <span class="typo-index">04</span>
+          <h3 class="typo-statement style-silver">SOMETIMES SILENCE SPEAKS LOUDER THAN WORDS.</h3>
+        </div>
+
+        <div class="typo-block reveal-scale">
+          <span class="typo-index">05</span>
+          <h3 class="typo-statement style-pink-violet">BE YOUR OWN KIND OF BEAUTIFUL.</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5A. About Nora -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">ESSENCE</span>
+          <h2 class="section-title">About Nora</h2>
+        </div>
+
+        <div class="glass-card about-card reveal-up">
+          <div class="card-border-glow"></div>
+          <p class="about-lead">
+            Nora is not merely a name etched in light—it is an atmosphere, a quiet pause between midnight thoughts and morning clarity.
+          </p>
+          <div class="about-pillars">
+            <div class="pillar-item">
+              <h4>LIGHT IN SHADOW</h4>
+              <p>Inspired by the timeless meaning of illumination, bringing warmth to the quietest corners of the soul.</p>
+            </div>
+            <div class="pillar-item">
+              <h4>PURE EMOTION</h4>
+              <p>Built without noise or distraction—where every syllable carries weight, grace, and unspoken honesty.</p>
+            </div>
+            <div class="pillar-item">
+              <h4>LIMITLESS GRACE</h4>
+              <p>A reminder that softness is strength, and authenticity is the rarest luxury in a rushed world.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5B. Beautiful Thoughts -->
+    <section class="section thoughts-section" id="thoughts">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">REFLECTIONS</span>
+          <h2 class="section-title">Beautiful Thoughts</h2>
+        </div>
+
+        <div class="thoughts-grid">
+          <article class="glass-card thought-card reveal-up">
+            <span class="quote-mark">&ldquo;</span>
+            <p>You do not have to explain your light to those who are comfortable living in the dark.</p>
+            <span class="thought-tag">I. CLARITY</span>
+          </article>
+
+          <article class="glass-card thought-card reveal-up">
+            <span class="quote-mark">&ldquo;</span>
+            <p>The rarest souls are the ones who remain gentle even after the world has tested their patience.</p>
+            <span class="thought-tag">II. GRACE</span>
+          </article>
+
+          <article class="glass-card thought-card reveal-up">
+            <span class="quote-mark">&ldquo;</span>
+            <p>Even the stars need the darkness of midnight to prove how brilliantly they can shine.</p>
+            <span class="thought-tag">III. RESILIENCE</span>
+          </article>
+
+          <article class="glass-card thought-card reveal-up">
+            <span class="quote-mark">&ldquo;</span>
+            <p>Some chapters close not because they failed, but because your spirit outgrew the page.</p>
+            <span class="thought-tag">IV. EVOLUTION</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5C. Secret Messages -->
+    <section class="section secrets-section" id="secrets">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">WHISPERS OF THE UNIVERSE</span>
+          <h2 class="section-title">Secret Messages</h2>
+          <p class="section-desc">Tap below to unseal a hidden note written exclusively for this moment.</p>
+        </div>
+
+        <div class="secret-vault reveal-up">
+          <div class="glass-card secret-display-card" id="secretCard">
+            <div class="secret-meta">
+              <span id="secretCounter">ARCHIVE &bull; 24 WHISPERS</span>
+              <span class="secret-status" id="secretStatus">SEALED</span>
+            </div>
+            <div class="secret-text-wrapper">
+              <p class="secret-message-text" id="secretMessageText">
+                A secret waits behind the veil of starlight. Press the button below to reveal what the universe wants you to hear today.
+              </p>
+            </div>
+          </div>
+
+          <button class="btn-glow secret-trigger-btn" id="openSecretBtn" type="button">
+            <span class="btn-text">OPEN A SECRET MESSAGE</span>
+            <span class="btn-glare"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5D. Feelings Corner -->
+    <section class="section feelings-section" id="feelings">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">EMOTIONAL FREQUENCY</span>
+          <h2 class="section-title">Feelings Corner</h2>
+          <p class="section-desc">Select what your heart is carrying right now.</p>
+        </div>
+
+        <div class="mood-selector reveal-up" role="tablist" aria-label="Select a feeling">
+          <button class="mood-btn active" data-mood="peace" type="button">SERENITY</button>
+          <button class="mood-btn" data-mood="hope" type="button">HOPE</button>
+          <button class="mood-btn" data-mood="strength" type="button">STRENGTH</button>
+          <button class="mood-btn" data-mood="wonder" type="button">WONDER</button>
+          <button class="mood-btn" data-mood="nostalgia" type="button">NOSTALGIA</button>
+        </div>
+
+        <div class="glass-card feeling-stage reveal-up" id="feelingStage">
+          <h3 class="feeling-title" id="feelingTitle">Where Quiet Meets Clarity</h3>
+          <p class="feeling-body" id="feelingBody">
+            Breathe slowly. You do not have to solve every tomorrow tonight. Right here, in this quiet space, you are allowed to simply exist without expectation.
+          </p>
+          <span class="feeling-mantra" id="feelingMantra">MANTRA: I AM AT PEACE WITH MY PACE.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5E. Dream World -->
+    <section class="section dream-section" id="dreams">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">BEYOND HORIZONS</span>
+          <h2 class="section-title">Dream World</h2>
+        </div>
+
+        <div class="dream-constellation">
+          <div class="dream-node reveal-left">
+            <span class="node-number">01</span>
+            <div class="node-content">
+              <h3>THE VELVET SKY</h3>
+              <p>Where unfinished wishes float like silver lanterns, waiting for the courage of dawn to become reality.</p>
+            </div>
+          </div>
+
+          <div class="dream-node reveal-right">
+            <span class="node-number">02</span>
+            <div class="node-content">
+              <h3>THE MIRROR OF MEMORY</h3>
+              <p>Every laugh you ever shared, every quiet victory you survived—woven into constellations that guide your path.</p>
+            </div>
+          </div>
+
+          <div class="dream-node reveal-left">
+            <span class="node-number">03</span>
+            <div class="node-content">
+              <h3>THE UNWRITTEN TOMORROW</h3>
+              <p>A blank expanse of violet starlight where your boldest dreams are already waiting to meet you halfway.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Final Surprise -->
+    <footer class="section final-surprise" id="finale">
+      <div class="container finale-container">
+        <p class="finale-headline reveal-up">AND THIS IS NOT THE END...</p>
+        <p class="finale-subtext reveal-up">
+          "Every beautiful story deserves another chapter."
+        </p>
+
+        <div class="signature-stage" id="signatureStage">
+          <div class="nora-signature" id="noraSignature">NORA</div>
+          <p class="signature-caption">FOREVER WRITTEN IN STARLIGHT</p>
+          <button class="btn-subtle-replay" id="replaySignatureBtn" type="button">
+            REPLAY SIGNATURE
+          </button>
+        </div>
+
+        <div class="footer-bottom">
+          <span>NORA &mdash; THE WORLD OF DREAMS</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to Top">
+    <span class="arrow-up">&#8593;</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
